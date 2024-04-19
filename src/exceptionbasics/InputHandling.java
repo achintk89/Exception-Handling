@@ -26,8 +26,6 @@ public class InputHandling {
 
         System.out.println("Please provide your feedback");
 
-        String feedback = scanner.next()+scanner.nextLine();
-
         System.out.println("Thank You");
 
 

@@ -1,6 +1,5 @@
 package exceptionbasics;
 
-import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class ExceptionDemo {
@@ -29,8 +28,6 @@ public class ExceptionDemo {
         System.out.println("Anything more you want?");
 
         System.out.println("Please provide your feedback");
-
-        String feedback = scanner.next()+scanner.nextLine();
 
         System.out.println("Thank You");
 
