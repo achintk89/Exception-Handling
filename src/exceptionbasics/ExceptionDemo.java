@@ -24,9 +24,7 @@ public class ExceptionDemo {
             System.out.println("Sorry you can't divide a number by zero");
         }
 
-       catch(InputMismatchException e){
-           System.out.println("Sorry provided input is not correct");
-       }
+
 
         System.out.println("Anything more you want?");
 

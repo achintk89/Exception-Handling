@@ -1,5 +1,6 @@
 package exceptionbasics;
 
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class InputHandling {
@@ -12,16 +13,14 @@ public class InputHandling {
 
         System.out.println("Enter two numbers : ");
 
-        int a = scanner.nextInt();
-        int b = scanner.nextInt();
-
-        if(b!=0) {
-            int result = a / b;
-            System.out.println(a + "/" + b + " = " + result);
-        }
-        else{
-            System.out.println("Sorry you can't divide a number by zero");
-        }
+            try {
+                int a = scanner.nextInt();
+                int b = scanner.nextInt();
+                int result = a / b;
+                System.out.println(a + "/" + b + " = " + result);
+            } catch (InputMismatchException e) {
+                System.out.println("Sorry provided input is not correct");
+            }
 
         System.out.println("Anything more you want?");
 
